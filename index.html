@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swin Queers — Memory Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-screen">
+
+    <div class="top-bar">
+      <img src="images/logo.jpg" class="logo-img" alt="SwinQueers" />
+      <div class="timer"><span id="t-num">30</span><span class="t-s">s</span></div>
+    </div>
+
+    <div class="card-area">
+      <div id="card-grid" class="card-grid"></div>
+    </div>
+
+    <div id="result-screen" class="result-screen" style="display:none">
+      <div class="result-card">
+        <img src="images/logo.jpg" class="result-logo" alt="SwinQueers" />
+        <div class="result-stats">
+          <div class="r-stat">
+            <span class="r-val" id="final-rounds">0</span>
+            <span class="r-lbl">Rounds</span>
+          </div>
+          <div class="r-divider"></div>
+          <div class="r-stat">
+            <span class="r-val" id="final-score">0</span>
+            <span class="r-lbl">Score</span>
+          </div>
+        </div>
+        <button id="restart-btn" class="btn-play-again">PLAY AGAIN</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
